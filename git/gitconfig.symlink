@@ -1,14 +1,19 @@
 # Local/private config goes in the include
 [include]
         path = ~/.gitconfig.local
-[hub]
-        protocol = https
+
 [alias]
         co = checkout
+        st = status
+        ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        lc = log -p -1
+        delete-merged-branches  = !git branch --merged | grep -v \"\\*\" | grep -v master | xargs -n 1 git branch -d
+        wipe = reset --hard HEAD
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+
 [color]
         diff = auto
         status = auto
@@ -16,7 +21,8 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = nano
+        autocrlf = input
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -25,11 +31,12 @@
         prompt = false
 [help]
         autocorrect = 1
+[pull]
+	    default = current
+	    rebase = true
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-        default = simple
+	    default = current
 [credential]
-	helper = osxkeychain
+	    helper = osxkeychain
+[commit]
+	    gpgsign = true
