@@ -2,7 +2,7 @@
 export ZSHDOT=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/development
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -56,7 +56,7 @@ fi
 
 
 #default java11
-export JAVA_HOME="~/.sdkman/candidates/java/current"
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export JRE_HOME=$JAVA_HOME
 
 GPG_TTY=$(tty)
@@ -66,6 +66,8 @@ eval $(gpg-agent --daemon)
 
 
 export PATH=$PATH:~/bin
+
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="~/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
