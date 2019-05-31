@@ -65,9 +65,8 @@ echo "Starting gpg-agent daemon"
 eval $(gpg-agent --daemon)
 
 
-# kubectx on prompt
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PROMPT='$(kube_ps1)'$PROMPT
-
 
 export PATH=$PATH:~/bin
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"

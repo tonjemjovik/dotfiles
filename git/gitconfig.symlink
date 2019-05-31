@@ -36,7 +36,5 @@
 	    rebase = true
 [push]
 	    default = current
-[credential]
-	    helper = osxkeychain
 [commit]
 	    gpgsign = true

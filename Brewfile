@@ -8,6 +8,10 @@ brew 'repo'
 # Shells
 brew 'zsh'
 
+# Kubernetes
+brew 'kube-ps1'
+brew 'kubernetes-cli'
+
 # Editors
 cask 'sublime-text'
 
