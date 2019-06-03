@@ -40,6 +40,10 @@ brew 'gzip'
 brew 'watch'
 brew 'wdiff'
 
+## Gpg stuff
+brew 'gnupg'
+brew 'pinentry-mac'
+
 ##
 # Some GNU command line tools already exist by default on OS X.
 # We choose to replace these with newer versions.

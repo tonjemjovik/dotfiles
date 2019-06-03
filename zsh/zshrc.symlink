@@ -59,12 +59,6 @@ fi
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export JRE_HOME=$JAVA_HOME
 
-GPG_TTY=$(tty)
-export GPG_TTY
-echo "Starting gpg-agent daemon"
-eval $(gpg-agent --daemon)
-
-
 export PATH=$PATH:~/bin
 
 
