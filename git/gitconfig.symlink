@@ -9,8 +9,8 @@
         lc = log -p -1
         delete-merged-branches  = !git branch --merged | grep -v \"\\*\" | grep -v master | xargs -n 1 git branch -d
         wipe = reset --hard HEAD
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
+        promote = !$ZSHDOT/bin/git-promote
+        wtf     = !$ZSHDOT/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 

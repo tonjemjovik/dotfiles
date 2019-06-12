@@ -1,4 +1,4 @@
 # See proxy folder
-alias kdev='wp kubectl --context=dev-fss'
-alias kprod='wp kubectl --context=prod-fss'
-alias k='wp kubectl'
+alias kdev='kubectl --context=dev-fss'
+alias kprod='kubectl --context=prod-fss'
+alias k='kubectl --context=preprod-fss'

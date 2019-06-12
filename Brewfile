@@ -1,5 +1,4 @@
 # Terminals
-cask 'iterm2'
 brew 'tmux'
 
 # Repo
@@ -21,6 +20,9 @@ brew 'wget'
 
 # Version control
 brew 'git'
+
+# Circle ci
+brew 'circleci'
 
 # https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 # Basic file, shell and text manipulation utilities of the GNU operating system.
@@ -78,31 +80,13 @@ brew 'jq'
 #brew 'sshfs'
 
 
-## Programming 
-tap 'codeclimate/formulae'
-brew 'codeclimate'
-
 ## Uncategorized
 brew 'base64'
-#cask 'spotify'
-#cask 'java'
-cask 'java8'
-brew 'jenv'
+
 brew 'go'
 brew 'gradle'
 brew 'maven'
 brew 'python'
 brew 'python3'
-cask 'intellij-idea'
-brew 'ansible'
-cask 'slack'
-cask 'minikube'	
+cask 'minikube'
 brew 'kubectl'
-brew 'glide'
-brew 'kubectx' 
-tap 'boz/repo'
-brew 'boz/repo/kail'
-brew 'kubernetes-helm'
-brew 'dep'
-brew 'terraform'
-brew 'azure-cli'

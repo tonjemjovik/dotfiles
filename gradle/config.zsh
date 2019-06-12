@@ -1,0 +1,1 @@
+export GRADLE_OPTS="-Xms1g -Xmx2048m -Xss16m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8"
