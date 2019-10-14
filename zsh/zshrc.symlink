@@ -54,6 +54,9 @@ if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
 
+# lang
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
 
 #default java11
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
