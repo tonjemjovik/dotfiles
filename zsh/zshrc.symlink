@@ -55,11 +55,11 @@ if [ $commands[kubectl] ]; then
 fi
 
 # lang
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
+export LC_ALL="no_NO.UTF-8"
+export LANG="no_NO.UTF-8"
+export LC_CTYPE="no_NO.UTF-8"
 
-#default java11
+# default java from sdkman
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export JRE_HOME=$JAVA_HOME
 
