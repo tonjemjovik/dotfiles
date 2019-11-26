@@ -41,4 +41,4 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Show hidden files - dotfiles
-defaults write com.apple.finder AppleShowAllFiles -boolean true;
+defaults write com.apple.finder AppleShowAllFiles YES;
