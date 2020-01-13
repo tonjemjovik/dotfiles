@@ -38,3 +38,8 @@
 	    default = current
 [commit]
 	    gpgsign = true
+
+[http "https://stash.adeo.no"]
+        proxy = socks5://localhost:14122
+[https "https://stash.adeo.no"]
+        proxy = socks5://localhost:14122
