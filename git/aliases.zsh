@@ -22,6 +22,6 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
-alias gh="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
+alias gh='open `git config remote.origin.url`'
 
 

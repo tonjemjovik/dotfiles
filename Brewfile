@@ -93,3 +93,6 @@ brew 'python'
 brew 'python3'
 cask 'minikube'
 brew 'kubectl'
+
+# Mac App Store command line interface
+brew 'mas'
