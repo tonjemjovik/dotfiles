@@ -83,6 +83,12 @@ brew 'jq'
 #brew 'sshfs'
 
 
+# Hub -  https://github.com/github/hub
+brew 'hub'
+
+# Ktlint
+brew 'ktlint'
+
 ## Uncategorized
 brew 'base64'
 
