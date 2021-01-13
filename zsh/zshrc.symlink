@@ -79,3 +79,5 @@ if [ -f '/Users/l153963/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/l153963
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/l153963/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/l153963/google-cloud-sdk/completion.zsh.inc'; fi
+
+prompt_context() {} # Disable 'user@hostname' prompt for oh-my-zsh agnoster theme
