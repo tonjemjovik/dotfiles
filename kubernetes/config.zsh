@@ -1,1 +1,1 @@
-export KUBECONFIG=~/development/kubeconfigs/config
+export KUBECONFIG="/Users/$(whoami)/development/kubeconfigs/config"
